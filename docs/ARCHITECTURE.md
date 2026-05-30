@@ -2,7 +2,7 @@
 
 ## Overview
 
-`@figgo/quiz-engine` follows a strict layered architecture where **core business logic never depends on transport**.
+`figgo-quiz-engine` follows a strict layered architecture where **core business logic never depends on transport**.
 
 ```
 ┌─────────────────────────────────────────────┐

@@ -1,4 +1,4 @@
-# @figgo/quiz-engine
+# figgo-quiz-engine
 
 Transport-agnostic quiz assessment engine for managing sessions, timing, navigation, scoring, and results.
 
@@ -18,7 +18,7 @@ The engine handles **assessment logic only**. It never stores question content, 
 ## Installation
 
 ```bash
-npm install @figgo/quiz-engine
+npm install figgo-quiz-engine
 ```
 
 ### Peer requirements
@@ -31,7 +31,7 @@ npm install @figgo/quiz-engine
 ### HTTP mode (Express server)
 
 ```ts
-import { QuizEngine } from '@figgo/quiz-engine';
+import { QuizEngine } from 'figgo-quiz-engine';
 
 const engine = new QuizEngine({
   mode: 'http',
@@ -45,7 +45,7 @@ await engine.start();
 ### IPC mode (Electron, offline desktop, embedded Node)
 
 ```ts
-import { QuizEngine } from '@figgo/quiz-engine';
+import { QuizEngine } from 'figgo-quiz-engine';
 
 const engine = new QuizEngine({
   mode: 'ipc',
@@ -150,7 +150,7 @@ import {
   submitAttempt,
   getSessionResult,
   createLogger,
-} from '@figgo/quiz-engine';
+} from 'figgo-quiz-engine';
 
 const storage = createMongoStorage(process.env.MONGO_URI!, createLogger());
 await storage.connect();

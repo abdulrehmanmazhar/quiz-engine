@@ -1,6 +1,6 @@
 {
-  "name": "@figgo/quiz-engine",
-  "version": "1.0.0",
+  "name": "figgo-quiz-engine",
+  "version": "1.0.1",
   "description": "Transport-agnostic quiz assessment engine for sessions, timing, navigation, scoring, and results",
   "type": "module",
   "main": "./dist/index.js",
